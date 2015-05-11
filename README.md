@@ -10,4 +10,9 @@ Currently there are 3 major open source UDP based file transfer systems: UDT, Ts
 
 After setting everything up, UFTP immediately achieved speeds of over 20 Mbit/s. This was the solution we needed, but since UFTP is not simply plug and play with Tridion we need to device a method to make Tridion and UFTP work together.
 
-## Tridion and UFTP
+## Tridion and UFTP setup
+This is the final setup I am currently using:
+
+On the Content Management Server:
+1. Setup Tridion to publish to the local file system on the server (in my case: D:\ftpchina\incoming)
+2. asdfsaf
