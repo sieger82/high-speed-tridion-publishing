@@ -15,7 +15,7 @@ Tridion publishing uses (xml) files to communicate states between the publisher,
 
 Since UFTP does not feature a bi-directional sync out of the box, I created some scripts to mimic the behaviour of the deployer and publisher processes on both sides of the world. The final setup works as follows: 
   1. Tridion publishes to a local folder on the Content Manager Server. 
-  2. The zip files are transported using UFTP to the incoming folder on the remove server (and deleted from the local server).
+  2. The zip files are transported using UFTP to the incoming folder on the remote server (and deleted from the local server).
   3. On the remote server, the deployer will pickup the zip files and write an xml state file.
   4. These xml state files are sent back to the local server using UFTP.
   5. The xml state files are read by the publisher process on the local server, completing the process.
