@@ -1,2 +1,4 @@
-# high-speed-tridion-publishing
-Solution to achieve high speed publishing from SDL Tridion on high latency connections
+# High Speed Tridion Publishing
+When we added an extra publication server located in China, to speed up website access for our Chinese customers, we quickly ran into problems with publishing from the content manager server (based in Europe) to the Chinese publication server. Publishing simply was too slow and unreliable. Publihsing a single page would take 10 to 15 minutes. And larger publihsing transactions would take more than half an hour or simply time out. This presented both a big problem with the initial first publish of the entire website, but would also present problems in production: Editors will not accept publishing wait times that long.
+
+Initially we had configured Tridion to use HTTPS as the transport method. Searching the web for possible solutions I came accross a Stack Exchange question (http://tridion.stackexchange.com/questions/10943/http-deployer-displays-slow-transport-throughput-on-high-latency-networks) which suggested FTP might be a better solution.
