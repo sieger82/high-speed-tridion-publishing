@@ -14,5 +14,5 @@ After setting everything up, UFTP immediately achieved speeds of over 20 Mbit/s.
 This is the final setup I am currently using:
 
 On the Content Management Server:
-1. Setup Tridion to publish to the local file system on the server (in my case: D:\ftpchina\incoming)
-2. asdfsaf
+  1. Setup Tridion to publish to the local file system on the server (in my case: D:\ftpchina\incoming)
+  2. asdfsaf
