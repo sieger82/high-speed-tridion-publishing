@@ -8,7 +8,7 @@ After some more researching it became apperent that the problem was mainly cause
 
 Currently there are 3 major open source UDP based file transfer systems: UDT, Tsunami and UFTP. Only UFTP (http://uftp-multicast.sourceforge.net/) currently has precompiled Windows binaries. I therefore decided to give UFTP a try.
 
-After setting everything up, UFTP immediately achieved speeds of over 20 Mbit/s. This was the solution we needed, but since UFTP is not simply plug and play with Tridion we need to device a method to make Tridion and UFTP work together.
+After setting everything up, UFTP immediately achieved speeds of over 20 Mbit/s. This was the solution we needed, but since UFTP is not simply plug and play with Tridion we needed to devise a method to make Tridion and UFTP work together.
 
 ## Tridion and UFTP setup
 Tridion publishing uses (xml) files to communicate states between the publisher, transport and deployer process. Essentially what happens is that the publisher will create a .zip package of the transaction. The transporter will move that package to the incoming directory for the deployer. The deployer will unzip en commit the changes (and delete the zip file in the process) and write an xml file to communicate the state of the transaction (success, failed, etc).
