@@ -40,11 +40,11 @@ On the remote publishing server:
 
 Please note that there is a differency between the start_transfer.bat for the local and remote servers. For the local server start_transfer.bat will:
   * Send all .zip files from the incoming directory to the remote server and delete these files after transfer is complete.
-  * Remove any .xml state file form the incoming directory that is older than 15 minutes (using delete_old_files.vbs).
+  * Remove any .xml state file from the incoming directory that is older than 15 minutes (using delete_old_files.vbs).
 
 On the remote end, start_transfer.bat will:
   * Send all .xml files to the local server.
-  * Remove any .xml state file form the incoming directory that is older than 15 minutes (using delete_old_files.vbs).
+  * Remove any .xml state file from the incoming directory that is older than 15 minutes (using delete_old_files.vbs).
 
 Also note, that you will need to transfer the meta.xml file manually from the remote to the local server the first time you start the sync process.
 
