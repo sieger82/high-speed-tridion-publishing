@@ -48,4 +48,5 @@ On the remote end, start_transfer.bat will:
 
 Also note, that you will need to transfer the meta.xml file manually from the remote to the local server the first time you start the sync process.
 
+## Security
 Also please make sure you pay attention to security! These scripts use encrypted transport by default and the clients are configured to only accept encrypted transfers. But since UFTP does not have an authentication scheme, you need to find a way to make sure unauthorized transfers are kept out. You can do that for example in your firewall by limiting access to port 1044/UDP only to the IP of of your own server.
