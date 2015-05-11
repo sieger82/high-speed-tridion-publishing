@@ -19,7 +19,6 @@ Since UFTP does not feature a bi-directional sync out of the box, I created some
   3. On the remote server, the deployer will pickup the zip files and write an xml state file.
   4. These xml state files are sent back to the local server using UFTP.
   5. The xml state files are read by the publisher process on the local server, completing the process.
-  6. 
   
 One thing I noticed is that the publiser not always picks up a 'success' state the first time it receives back the xml file from the remote server. Therefore I've created the sync scripts in such a way that it will keep and sync all xml files from the last 15 minutes, both on the local and remote servers. This ensures that eventually Tridion will read the correct state for all transactions.
 
